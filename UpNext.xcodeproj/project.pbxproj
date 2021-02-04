@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3171955C25CC9FD400DA9507 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171955B25CC9FD400DA9507 /* MainApp.swift */; };
 		3171956025CC9FD500DA9507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3171955F25CC9FD500DA9507 /* Assets.xcassets */; };
 		3171956E25CC9FD500DA9507 /* MainAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171956D25CC9FD500DA9507 /* MainAppTests.swift */; };
+		3180EC4C25CCA50F00811DB0 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 3180EC4B25CCA50F00811DB0 /* Common */; };
+		3180EC5125CCA65B00811DB0 /* Testing in Frameworks */ = {isa = PBXBuildFile; productRef = 3180EC5025CCA65B00811DB0 /* Testing */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,8 @@
 		3171956925CC9FD500DA9507 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3171956D25CC9FD500DA9507 /* MainAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppTests.swift; sourceTree = "<group>"; };
 		3171956F25CC9FD500DA9507 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
+		3180EC4425CCA46400811DB0 /* Common */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Common; sourceTree = "<group>"; };
+		3180EC4725CCA48600811DB0 /* Testing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Testing; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3180EC4C25CCA50F00811DB0 /* Common in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3180EC5125CCA65B00811DB0 /* Testing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				3171955A25CC9FD400DA9507 /* App */,
+				3180EC4425CCA46400811DB0 /* Common */,
+				3180EC4725CCA48600811DB0 /* Testing */,
 				3171955925CC9FD400DA9507 /* Products */,
+				3180EC4A25CCA50F00811DB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +112,13 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		3180EC4A25CCA50F00811DB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +135,9 @@
 			dependencies = (
 			);
 			name = App;
+			packageProductDependencies = (
+				3180EC4B25CCA50F00811DB0 /* Common */,
+			);
 			productName = UpNext;
 			productReference = 3171955825CC9FD400DA9507 /* UpNext.app */;
 			productType = "com.apple.product-type.application";
@@ -137,6 +156,9 @@
 				3171956B25CC9FD500DA9507 /* PBXTargetDependency */,
 			);
 			name = AppTests;
+			packageProductDependencies = (
+				3180EC5025CCA65B00811DB0 /* Testing */,
+			);
 			productName = UpNextTests;
 			productReference = 3171956925CC9FD500DA9507 /* AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -455,6 +477,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3180EC4B25CCA50F00811DB0 /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Common;
+		};
+		3180EC5025CCA65B00811DB0 /* Testing */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Testing;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3171955025CC9FD400DA9507 /* Project object */;
 }
