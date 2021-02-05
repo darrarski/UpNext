@@ -1,3 +1,4 @@
+#if os(iOS)
 import SnapshotTesting
 import SwiftUI
 import UIKit
@@ -38,3 +39,5 @@ public func assertSnapshots<View: SwiftUI.View>(
     line: line
   )
 }
+
+#endif

@@ -1,3 +1,4 @@
+#if os(iOS)
 import SnapshotTesting
 import SwiftUI
 
@@ -216,3 +217,5 @@ private extension UIUserInterfaceStyle {
     }
   }
 }
+
+#endif
