@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		316FC63C25CCE232006351FF /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316FC63825CCE231006351FF /* AppAction.swift */; };
+		316FC63D25CCE232006351FF /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316FC63925CCE231006351FF /* AppEnvironment.swift */; };
+		316FC63E25CCE232006351FF /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316FC63A25CCE231006351FF /* AppReducer.swift */; };
+		316FC63F25CCE232006351FF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316FC63B25CCE232006351FF /* AppState.swift */; };
 		3171955C25CC9FD400DA9507 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171955B25CC9FD400DA9507 /* App.swift */; };
 		3171956025CC9FD500DA9507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3171955F25CC9FD500DA9507 /* Assets.xcassets */; };
 		3180EC4C25CCA50F00811DB0 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 3180EC4B25CCA50F00811DB0 /* Common */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		316FC63825CCE231006351FF /* AppAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		316FC63925CCE231006351FF /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		316FC63A25CCE231006351FF /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		316FC63B25CCE232006351FF /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		3171955825CC9FD400DA9507 /* UpNext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpNext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3171955B25CC9FD400DA9507 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		3171955F25CC9FD500DA9507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				3171955B25CC9FD400DA9507 /* App.swift */,
+				316FC63825CCE231006351FF /* AppAction.swift */,
+				316FC63925CCE231006351FF /* AppEnvironment.swift */,
+				316FC63A25CCE231006351FF /* AppReducer.swift */,
+				316FC63B25CCE232006351FF /* AppState.swift */,
 				3180EC5425CCAE8A00811DB0 /* AppView.swift */,
 			);
 			path = Sources;
@@ -227,7 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3171955C25CC9FD400DA9507 /* App.swift in Sources */,
+				316FC63D25CCE232006351FF /* AppEnvironment.swift in Sources */,
+				316FC63C25CCE232006351FF /* AppAction.swift in Sources */,
+				316FC63F25CCE232006351FF /* AppState.swift in Sources */,
 				3180EC5525CCAE8A00811DB0 /* AppView.swift in Sources */,
+				316FC63E25CCE232006351FF /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
