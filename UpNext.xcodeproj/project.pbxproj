@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3171955C25CC9FD400DA9507 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171955B25CC9FD400DA9507 /* MainApp.swift */; };
+		3171955C25CC9FD400DA9507 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171955B25CC9FD400DA9507 /* App.swift */; };
 		3171956025CC9FD500DA9507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3171955F25CC9FD500DA9507 /* Assets.xcassets */; };
-		3171956E25CC9FD500DA9507 /* MainAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3171956D25CC9FD500DA9507 /* MainAppTests.swift */; };
 		3180EC4C25CCA50F00811DB0 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 3180EC4B25CCA50F00811DB0 /* Common */; };
 		3180EC5125CCA65B00811DB0 /* Testing in Frameworks */ = {isa = PBXBuildFile; productRef = 3180EC5025CCA65B00811DB0 /* Testing */; };
+		3180EC5525CCAE8A00811DB0 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180EC5425CCAE8A00811DB0 /* AppView.swift */; };
+		3180EC7925CCAFFC00811DB0 /* AppViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180EC7825CCAFFC00811DB0 /* AppViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,14 +27,15 @@
 
 /* Begin PBXFileReference section */
 		3171955825CC9FD400DA9507 /* UpNext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpNext.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3171955B25CC9FD400DA9507 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
+		3171955B25CC9FD400DA9507 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		3171955F25CC9FD500DA9507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3171956425CC9FD500DA9507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3171956925CC9FD500DA9507 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3171956D25CC9FD500DA9507 /* MainAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppTests.swift; sourceTree = "<group>"; };
 		3171956F25CC9FD500DA9507 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
 		3180EC4425CCA46400811DB0 /* Common */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Common; sourceTree = "<group>"; };
 		3180EC4725CCA48600811DB0 /* Testing */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Testing; sourceTree = "<group>"; };
+		3180EC5425CCAE8A00811DB0 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		3180EC7825CCAFFC00811DB0 /* AppViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,7 @@
 		3171956C25CC9FD500DA9507 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3171956D25CC9FD500DA9507 /* MainAppTests.swift */,
+				3180EC7825CCAFFC00811DB0 /* AppViewTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -107,7 +109,8 @@
 		317195AE25CCA0BC00DA9507 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3171955B25CC9FD400DA9507 /* MainApp.swift */,
+				3171955B25CC9FD400DA9507 /* App.swift */,
+				3180EC5425CCAE8A00811DB0 /* AppView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -223,7 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3171955C25CC9FD400DA9507 /* MainApp.swift in Sources */,
+				3171955C25CC9FD400DA9507 /* App.swift in Sources */,
+				3180EC5525CCAE8A00811DB0 /* AppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3171956E25CC9FD500DA9507 /* MainAppTests.swift in Sources */,
+				3180EC7925CCAFFC00811DB0 /* AppViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
