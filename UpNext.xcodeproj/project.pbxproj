@@ -20,6 +20,8 @@
 		31CBCAC525CD9B28005DDC43 /* MacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CBCAC425CD9B28005DDC43 /* MacApp.swift */; };
 		31CBCAC925CD9B28005DDC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31CBCAC825CD9B28005DDC43 /* Assets.xcassets */; };
 		31CBCAD825CD9B29005DDC43 /* MacAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CBCAD725CD9B29005DDC43 /* MacAppTests.swift */; };
+		31CBCB2925CD9EBA005DDC43 /* Common in Frameworks */ = {isa = PBXBuildFile; productRef = 31CBCB2825CD9EBA005DDC43 /* Common */; };
+		31CBCB2F25CD9F61005DDC43 /* Testing in Frameworks */ = {isa = PBXBuildFile; productRef = 31CBCB2E25CD9F61005DDC43 /* Testing */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31CBCB2925CD9EBA005DDC43 /* Common in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31CBCB2F25CD9F61005DDC43 /* Testing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +267,9 @@
 			dependencies = (
 			);
 			name = MacApp;
+			packageProductDependencies = (
+				31CBCB2825CD9EBA005DDC43 /* Common */,
+			);
 			productName = MacApp;
 			productReference = 31CBCAC225CD9B28005DDC43 /* UpNext.app */;
 			productType = "com.apple.product-type.application";
@@ -281,6 +288,9 @@
 				31CBCAD525CD9B29005DDC43 /* PBXTargetDependency */,
 			);
 			name = MacAppTests;
+			packageProductDependencies = (
+				31CBCB2E25CD9F61005DDC43 /* Testing */,
+			);
 			productName = MacAppTests;
 			productReference = 31CBCAD325CD9B29005DDC43 /* MacAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -762,6 +772,14 @@
 			productName = Common;
 		};
 		3180EC5025CCA65B00811DB0 /* Testing */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Testing;
+		};
+		31CBCB2825CD9EBA005DDC43 /* Common */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Common;
+		};
+		31CBCB2E25CD9F61005DDC43 /* Testing */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Testing;
 		};
